@@ -1,0 +1,5 @@
+{
+  "omnisharp.sdkVersion": "",
+  "omnisharp.sdkIncludePrereleases": false,
+  "thunder-client.httpLibrary": "got"
+}

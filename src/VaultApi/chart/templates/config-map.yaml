@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "VaultApi.fullname" . }}
+  labels:
+    {{- include "VaultApi.labels" . | nindent 4 }}
+data:
+  ASPNETCORE_ENVIRONMENT: Production
+  Logging__LogLevel__Default: Information
+{{ toYaml .Values.configmap | nindent 2 }}
+
